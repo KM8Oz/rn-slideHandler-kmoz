@@ -1,0 +1,30 @@
+{
+    "name": "rn-SlideHandler-kmoz",
+    "version": "1.0.0",
+    "description": "sliding gestures handlers for react native apps",
+    "author": "kmoz000",
+    "contributors": [
+      "none by me and the react docs"
+    ],
+    "main": "index.js",
+    "license": "MIT",
+    "keywords": [
+      "react native",
+      "react hooks",
+      "sliding gestures handler",
+      "gestures",
+      "panHandlers",
+      "panRespondes",
+      "slideHandler",
+      "without errors"
+    ],
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/KM8Oz/rn-slideHandler-kmoz"
+    },
+    "bugs": {
+      "url": "https://github.com/KM8Oz/rn-slideHandler-kmoz/issues"
+    },
+    "homepage": "https://github.com/KM8Oz/rn-slideHandler-kmoz#readme"
+  }
+  
