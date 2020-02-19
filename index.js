@@ -9,11 +9,11 @@
      */
     import React from "react";
     import {PanResponder, Dimensions, View} from 'react-native';
-    export default slideHandler = props => {
+    export default SlideHandler = props => {
         const leftAction =  props.leftswipe == undefined ? ()=>null : props.leftswipe ;
         const rightAction = props.rightswipe == undefined ? ()=>null : props.rightswipe ;
         const upAction = props.upswipe == undefined ? ()=>null : props.upswipe  ;
-        const bottomAction = props.bottomswipe == undefined ? ()=>null : props.bottomswipe   ;
+        const downAction = props.downswipe == undefined ? ()=>null : props.downswipe   ;
         const panResponder = PanResponder.create({
         onStartShouldSetPanResponder: () => true,
         onStartShouldSetPanResponderCapture: () => true,
@@ -26,7 +26,7 @@
       Math.round(gestureState.dx) < -0.6 * screenWidth && Math.round(gestureState.dy) < 0.2 *  Math.abs(screenHeight) ? leftAction()
       : Math.round(gestureState.dx) > 0.6 * screenWidth && Math.round(gestureState.dy) < 0.2 *  Math.abs(screenHeight) ? rightAction() : 
       Math.round(gestureState.dy) < 0.2 * Math.abs(screenWidth) && Math.round(gestureState.dy) < -0.5 * screenHeight ? upAction() :
-      Math.round(gestureState.dx) < 0.2 *  Math.abs(screenWidth) && Math.round(gestureState.dy) > 0.5 * screenHeight ? bottomAction():
+      Math.round(gestureState.dx) < 0.2 *  Math.abs(screenWidth) && Math.round(gestureState.dy) > 0.5 * screenHeight ? downAction():
       null ;
         },
         // onPanResponderGrant: (evt, gestureState) => {
